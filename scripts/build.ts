@@ -3,7 +3,7 @@ import { sassPlugin } from "esbuild-sass-plugin";
 
 await build({
    entryPoints: ["src/main.tsx"],
-   outdir: "build",
+   outdir: "target/debug",
 
    bundle: true,
    platform: "neutral",
