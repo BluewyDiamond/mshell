@@ -42,7 +42,12 @@ function WorkspaceLabel({ workspaceName }: { workspaceName: string }) {
 
 export default function () {
    return (
-      <button cssClasses={["workspaces-button"]}>
+      <button
+         cssClasses={["workspaces-button"]}
+         onClicked={() => {
+            niri.overview.toggle();
+         }}
+      >
          <box>
             {options.bar.niriWorkspaces.names.map((workspaceName) => (
                <WorkspaceLabel workspaceName={workspaceName} />
