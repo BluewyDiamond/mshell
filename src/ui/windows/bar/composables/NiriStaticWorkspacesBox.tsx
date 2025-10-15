@@ -45,7 +45,7 @@ export default function () {
       <button
          cssClasses={["workspaces-button"]}
          onClicked={() => {
-            niri.overview.toggle();
+            niri.overview.toggle(!niri.overview.isOpen);
          }}
       >
          <box>
