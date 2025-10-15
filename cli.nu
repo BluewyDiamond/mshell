@@ -2,7 +2,7 @@
 
 const script_file_abs_path = path self .
 
-let mshell_bin_abs_path = $script_file_abs_path | path join 'build' 'main.js'
+let mshell_bin_abs_path = $script_file_abs_path | path join 'target' 'debug' 'main.js'
 let build_script_file_abs_path = $script_file_abs_path | path join 'scripts' 'build.ts'
 
 def main [] { }
