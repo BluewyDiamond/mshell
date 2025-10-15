@@ -44,7 +44,7 @@ export default function () {
    return (
       <button
          cssClasses={["workspaces-button"]}
-         onClicked={() => niri.overview.toggle()}
+         onClicked={async () => await niri.overview.toggle()}
       >
          <box>
             {options.bar.niriWorkspaces.names.map((workspaceName) => (
