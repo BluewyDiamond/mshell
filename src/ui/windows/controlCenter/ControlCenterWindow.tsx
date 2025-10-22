@@ -36,8 +36,7 @@ export default function ({ gdkmonitor }: { gdkmonitor: Gdk.Monitor }) {
          anchor={
             Astal.WindowAnchor.TOP |
             Astal.WindowAnchor.RIGHT |
-            Astal.WindowAnchor.BOTTOM |
-            Astal.WindowAnchor.LEFT
+            Astal.WindowAnchor.BOTTOM
          }
          exclusivity={Astal.Exclusivity.EXCLUSIVE}
          keymode={Astal.Keymode.EXCLUSIVE}
