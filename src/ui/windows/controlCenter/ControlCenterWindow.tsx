@@ -32,14 +32,15 @@ export default function ({ gdkmonitor }: { gdkmonitor: Gdk.Monitor }) {
          gdkmonitor={gdkmonitor}
          name={options.controlCenter.name}
          namespace={options.controlCenter.name}
+         layer={Astal.Layer.OVERLAY}
          cssClasses={["control-center-window"]}
          anchor={
             Astal.WindowAnchor.TOP |
             Astal.WindowAnchor.RIGHT |
             Astal.WindowAnchor.BOTTOM
          }
-         exclusivity={Astal.Exclusivity.EXCLUSIVE}
-         keymode={Astal.Keymode.EXCLUSIVE}
+         exclusivity={Astal.Exclusivity.NORMAL}
+         keymode={Astal.Keymode.NONE}
          application={app}
       >
          <Gtk.EventControllerKey onKeyPressed={onKey} />
